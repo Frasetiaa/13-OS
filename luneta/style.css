@@ -114,14 +114,10 @@ body {
 .hero-text {
     position: relative;
     z-index: 2;
-    background: rgba(26, 13, 26, 0.7);
     padding: 40px;
-    border-radius: 20px;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 179, 255, 0.2);
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
     margin-top: -100px;
     max-width: 800px;
+    bottom: 300px;
 }
 
 .hero-title {
