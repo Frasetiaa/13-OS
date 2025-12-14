@@ -77,19 +77,51 @@ body {
 
 .hero-content {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    gap: 100px;
+    justify-content: center;
     width: 100%;
     max-width: 1400px;
     margin-bottom: 50px;
     padding: 0 50px;
+    text-align: center;
+    position: relative;
 }
 
-.hero-left {
+.logo-container {
+    width: 400px;
+    height: 400px;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.logo-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: 
+        drop-shadow(0 10px 30px rgba(255, 179, 255, 0.4)) 
+        blur(8px) 
+        brightness(1.2);
+    animation: float 3s ease-in-out infinite;
+    opacity: 0.7;
+}
+
+.hero-text {
+    position: relative;
+    z-index: 2;
+    background: rgba(26, 13, 26, 0.7);
+    padding: 40px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 179, 255, 0.2);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    margin-top: -100px;
+    max-width: 800px;
 }
 
 .hero-title {
@@ -103,45 +135,33 @@ body {
 }
 
 .hero-subtitle {
-    font-size: 16px;
+    font-size: 18px;
     color: #E0B0E0;
     margin-bottom: 40px;
+    line-height: 1.6;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .cta-button {
     background: linear-gradient(135deg, #FFB3FF 0%, #FF80FF 100%);
     color: #1A0D1A;
-    padding: 15px 50px;
+    padding: 18px 60px;
     border: none;
-    border-radius: 5px;
-    font-size: 16px;
+    border-radius: 8px;
+    font-size: 18px;
     font-weight: bold;
     cursor: pointer;
     text-transform: uppercase;
     transition: transform 0.3s, box-shadow 0.3s;
     box-shadow: 0 5px 20px rgba(255, 179, 255, 0.3);
+    margin-top: 20px;
 }
 
 .cta-button:hover {
     transform: translateY(-3px);
     box-shadow: 0 10px 30px rgba(255, 179, 255, 0.6);
-}
-
-.logo-container {
-    width: 600px;
-    height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-}
-
-.logo-image {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    filter: drop-shadow(0 10px 30px rgba(255, 179, 255, 0.4));
-    animation: float 3s ease-in-out infinite;
 }
 
 @keyframes float {
@@ -154,15 +174,17 @@ body {
     margin: 30px 0;
     letter-spacing: 2px;
     color: #FFB3FF;
+    text-align: center;
 }
 
 .features {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(3, 1fr); /* 3 kolom untuk desktop */
     gap: 40px;
     padding: 50px;
     max-width: 1200px;
     margin: 0 auto;
+    width: 100%;
 }
 
 .feature-card {
@@ -172,6 +194,11 @@ body {
     border: 1px solid rgba(255, 179, 255, 0.3);
     background: rgba(255, 179, 255, 0.05);
     transition: transform 0.3s, box-shadow 0.3s;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .feature-card:hover {
@@ -210,6 +237,7 @@ body {
     font-size: 14px;
     color: #D4A5D4;
     line-height: 1.6;
+    flex-grow: 1;
 }
 
 .info-section {
@@ -221,123 +249,84 @@ body {
 
 .info-screenshot-container {
     display: flex;
-    align-items: flex-start;
-    gap: 50px;
+    align-items: stretch;
+    justify-content: center;
+    gap: 30px;
     margin-bottom: 80px;
+    flex-wrap: wrap;
 }
 
 .screenshot {
-    width: 100%;
-    max-width: 600px;
+    flex: 1;
+    min-width: 300px;
+    max-width: calc(33.333% - 20px);
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 20px 60px rgba(255, 179, 255, 0.2);
     border: 1px solid rgba(255, 179, 255, 0.3);
-    transition: transform 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .screenshot:hover {
-    transform: scale(1.02);
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 30px 80px rgba(255, 179, 255, 0.3);
 }
 
 .screenshot img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
     display: block;
-}
-
-.info-list {
-    display: flex;
-    flex-direction: column;
-    gap: 80px;
-    flex: 1;
-}
-
-.info-item {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
-    border-radius: 10px;
-    background: rgba(255, 179, 255, 0.05);
-    border: 1px solid rgba(255, 179, 255, 0.1);
-    transition: all 0.3s;
-}
-
-.info-item:hover {
-    background: rgba(255, 179, 255, 0.1);
-    border-color: rgba(255, 179, 255, 0.3);
-}
-
-.info-icon {
-    width: 50px;
-    height: 50px;
-    min-width: 50px;
-    border: 2px solid rgba(255, 179, 255, 0.5);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-self: flex-start;
-    margin-top: 0;
-    background: rgba(255, 179, 255, 0.1);
-}
-
-.info-icon svg {
-    width: 24px;
-    height: 24px;
-    stroke: #FFB3FF;
-    stroke-width: 2;
-}
-
-.info-content {
-    flex: 1;
-}
-
-.info-title {
-    font-size: 18px;
-    color: #FFB3FF;
-    margin-bottom: 8px;
-    font-weight: 600;
-}
-
-.info-desc {
-    font-size: 14px;
-    color: #D4A5D4;
-    line-height: 1.6;
 }
 
 .benefit-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(2, 1fr); /* 2 kolom untuk desktop */
+    grid-template-rows: repeat(2, 1fr); /* 2 baris untuk desktop */
     gap: 30px;
     margin-top: 50px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .benefit-card {
     background: rgba(255, 179, 255, 0.05);
-    padding: 30px;
-    border-radius: 10px;
+    padding: 40px 35px;
+    border-radius: 15px;
     border: 1px solid rgba(255, 179, 255, 0.2);
     transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 200px;
 }
 
 .benefit-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(255, 179, 255, 0.2);
-    border-color: rgba(255, 179, 255, 0.4);
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(255, 179, 255, 0.25);
+    border-color: rgba(255, 179, 255, 0.5);
+    background: rgba(255, 179, 255, 0.1);
 }
 
 .benefit-title {
     color: #FFB3FF;
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 15px;
     font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .benefit-text {
     color: #D4A5D4;
-    font-size: 13px;
-    line-height: 1.8;
+    font-size: 15px;
+    line-height: 1.7;
+    text-align: center;
 }
 
 .info-fitur-title {
@@ -350,6 +339,28 @@ body {
     text-shadow: 0 0 15px rgba(255, 179, 255, 0.3);
 }
 
+/* Responsive untuk tablet */
+@media (max-width: 1024px) {
+    .features {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        padding: 40px;
+    }
+    
+    .screenshot {
+        max-width: calc(50% - 15px);
+        min-width: 250px;
+    }
+    
+    .benefit-cards {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 25px;
+        max-width: 90%;
+    }
+}
+
+/* Responsive untuk mobile */
 @media (max-width: 768px) {
     .hero-title {
         font-size: 48px;
@@ -363,32 +374,55 @@ body {
         padding: 30px 20px;
     }
     
+    .features {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    
     .logo-container {
-        width: 300px;
+        width: 250px;
         height: 250px;
     }
     
     .hero-content {
-        flex-direction: column;
-        gap: 40px;
         padding: 0 20px;
     }
     
-    .hero-left {
-        align-items: center;
-        text-align: center;
+    .hero-text {
+        padding: 30px 20px;
+        margin-top: -60px;
     }
     
-    .info-screenshot-container {
-        flex-direction: column;
+    .hero-subtitle {
+        font-size: 16px;
+    }
+    
+    .cta-button {
+        padding: 15px 40px;
+        font-size: 16px;
     }
     
     .screenshot {
         max-width: 100%;
+        min-width: 100%;
+        margin-bottom: 20px;
     }
     
-    .info-list {
-        gap: 40px;
+    .info-screenshot-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .benefit-cards {
+        grid-template-columns: 1fr; /* 1 kolom untuk mobile */
+        grid-template-rows: auto; /* Baris otomatis */
+        gap: 20px;
+        max-width: 100%;
+    }
+    
+    .benefit-card {
+        padding: 30px 25px;
+        min-height: 180px;
     }
     
     .nav-links {
@@ -398,5 +432,39 @@ body {
     .nav-links a {
         padding: 6px 12px;
         font-size: 12px;
+    }
+}
+
+/* Responsive untuk tablet kecil */
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 36px;
+    }
+    
+    .hero-subtitle {
+        font-size: 14px;
+    }
+    
+    .cta-button {
+        padding: 12px 30px;
+        font-size: 14px;
+    }
+    
+    .logo-container {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .benefit-card {
+        padding: 25px 20px;
+        min-height: 160px;
+    }
+    
+    .benefit-title {
+        font-size: 18px;
+    }
+    
+    .benefit-text {
+        font-size: 14px;
     }
 }
