@@ -283,11 +283,7 @@ body {
     transform: translateX(-50%);
     width: 250px;
     height: 3px;
-    background: linear-gradient(90deg, 
-        transparent, 
-        #ff006e, 
-        #8338ec, 
-        transparent
+    
     );
     border-radius: 2px;
     box-shadow: 0 0 10px rgba(255, 0, 110, 0.3);
@@ -307,7 +303,7 @@ body {
 
 .hero-subtitle::before,
 .hero-subtitle::after {
-    content: '★';
+    
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -402,16 +398,12 @@ body {
 .controller-glow {
     width: 400px; /* 3x lebih kecil dari 1200px */
     height: 240px; /* 3x lebih kecil dari 720px */
-    background: linear-gradient(135deg, 
-        rgba(255, 0, 110, 0.15), 
-        rgba(131, 56, 236, 0.15)
-    );
-    border: 2px solid rgba(255, 0, 110, 0.3);
+   
+
+    
     border-radius: 20px;
     position: relative;
-    box-shadow: 
-        0 0 60px rgba(255, 0, 110, 0.4), 
-        inset 0 0 30px rgba(255, 0, 110, 0.2);
+    
 }
 
 
@@ -438,11 +430,7 @@ body {
     transform: translate(-50%, -50%);
     width: 85%;
     height: 65%;
-    background: radial-gradient(
-        circle, 
-        rgba(255, 0, 110, 0.25) 0%, 
-        rgba(131, 56, 236, 0.15) 30%,
-        transparent 70%
+
     );
     filter: blur(25px);
 }
