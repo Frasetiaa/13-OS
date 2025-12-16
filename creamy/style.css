@@ -284,7 +284,6 @@ body {
     width: 250px;
     height: 3px;
     
-    );
     border-radius: 2px;
     box-shadow: 0 0 10px rgba(255, 0, 110, 0.3);
 }
@@ -303,7 +302,7 @@ body {
 
 .hero-subtitle::before,
 .hero-subtitle::after {
-    
+
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -430,8 +429,6 @@ body {
     transform: translate(-50%, -50%);
     width: 85%;
     height: 65%;
-
-    );
     filter: blur(25px);
 }
 
