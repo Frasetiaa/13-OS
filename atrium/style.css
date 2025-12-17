@@ -30,25 +30,41 @@ body {
     object-fit: contain;
 }
 
-.nav-links {
+.nav-menu {
     display: flex;
-    gap: 30px;
     list-style: none;
+    gap: 3rem;
+    align-items: center;
 }
 
-.nav-links a {
+.nav-menu li {
+    display: inline-block;
+}
+
+.nav-menu a {
     color: #F8F8FF;
     text-decoration: none;
-    font-size: 13px;
-    text-transform: uppercase;
-    transition: color 0.3s;
     font-weight: 500;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    position: relative;
+    opacity: 0.7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.nav-links a:hover {
-    color: #FAA69B;
+.nav-menu a svg {
+    width: 28px;
+    height: 28px;
+    stroke: #F8F8FF;
+    transition: all 0.3s ease;
 }
 
+.nav-menu a:hover svg {
+    stroke: #FAA69B;
+    filter: drop-shadow(0 0 8px rgba(255, 107, 107, 0.8));
+}
 .hero {
     min-height: 100vh;
     display: flex;
