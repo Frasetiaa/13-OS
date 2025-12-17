@@ -124,7 +124,7 @@ body {
 .feature-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 60px;
+    gap: 2rem;
 }
 
 .feature-card {

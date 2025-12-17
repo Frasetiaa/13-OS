@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lunetta</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
 </head>
 
 <body>
@@ -19,10 +20,10 @@
                 <span class="logo-text">Lunetta</span>
             </div>
             <ul class="nav-menu">
-                <li><a href="#home">Github</a></li>
-                <li><a href="#features">Instagram</a></li>
-                <li><a href="#about">Facebook</a></li>
-                <li><a href="#contact">Twitter</a></li>
+                <li><a href="#home"><i data-feather="github"></i></a></li>
+                <li><a href="#features"><i data-feather="instagram"></i></a></li>
+                <li><a href="#about"><i data-feather="facebook"></i></a></li>
+                <li><a href="#contact"><i data-feather="twitter"></i></a></li>
             </ul>
         </div>
     </nav>
@@ -85,16 +86,34 @@
             </div>
         </div>
 
-        <!-- Image Cards -->
+        <!-- Image Cards Row -->
         <div class="features-grid">
             <div class="feature-card image-card">
                 <img src="img/dashboard.jpeg" alt="Feature Screenshot" class="card-image">
+                <div class="image-description">
+                    <h3>Modern Interface</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quo nisi nostrum consectetur? Nisi
+                        temporibus perferendis est accusamus reprehenderit numquam expedita minima. Quia mollitia
+                        distinctio nostrum eius maxime consectetur officiis.</p>
+                </div>
             </div>
             <div class="feature-card image-card">
                 <img src="img/dashboard.jpeg" alt="Feature Screenshot" class="card-image">
+                <div class="image-description">
+                    <h3>Powerful Features</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione veniam deleniti autem sunt
+                        rerum omnis, architecto debitis expedita minus culpa atque cumque, doloremque iste ab, magnam
+                        blanditiis. Suscipit, iusto dolore?</p>
+                </div>
             </div>
             <div class="feature-card image-card">
                 <img src="img/dashboard.jpeg" alt="Feature Screenshot" class="card-image">
+                <div class="image-description">
+                    <h3>Seamless Workflow</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim numquam consectetur excepturi
+                        perferendis vel quaerat, magni officiis nihil quos, fugiat modi voluptate corporis nulla
+                        blanditiis laudantium eligendi possimus. Ab, eius?</p>
+                </div>
             </div>
         </div>
 
@@ -133,6 +152,10 @@
     </section>
 
     <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+
 </body>
 
 </html>
