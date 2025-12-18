@@ -33,3 +33,9 @@ displin
 terstruktur
 
 component - warna - font - komposisi/layout
+
+blazing : 
+menambahkan gambar seperti suana dikantor
+tambahkan juga untuk penggunaan perusahaan, umkm, frenchies, 
+
+1. tambahin section untuk latest version setiap website
