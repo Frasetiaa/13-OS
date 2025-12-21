@@ -401,10 +401,156 @@
         }
 
         /* about section start */
+        .main-about {
+            text-align: start;
+            position: relative;
+            left: 1000px; /* Menggeser 20px ke kiri dari tepi kanan */
+            bottom: 120px;
+        }
+
+
+        
         .main-about h1 {
-            font-size: 40px;
+            font-size: 32px;
+            position: relative;
+            right: 29rem;
+            top: 5rem;
         }
 
         .main-about p {
-            font-size: 32px;
+            font-size: 24px;
+            
+        }
+
+        /* icon section start */
+
+        .features-card {
+            grid-column: 7 / 13;
+            /* grid-row: 1; */
+            background: #0F4C75;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            overflow: visible;
+            padding: 2rem;
+            width: 38rem;
+            height: 14.5rem;
+            position: relative;
+            left: 350px;
+        }
+
+        .icon-features-container {
+            position: relative;
+            margin-top: 100px;
+            min-height: 200px;
+        }
+
+        .icon-features-item {
+            position: absolute;
+            text-decoration: none;
+            width: 80px;
+            height: 80px;
+            border: 5px solid white;
+            border-radius: 16px;
+            background: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+        .icon-features-item-deploy {
+            top: 110px;
+            left: 450px;
+        }
+
+        .icon-features-item-deploy i {
+            font-size: 52px;
+        }
+
+        .icon-features-item-update {
+            top: 110px;
+            left: 350px;
+        }
+
+        .icon-features-item-update i {
+            font-size: 58px;
+        }
+
+        .text-features {
+            position: relative;
+            bottom: 3.5rem;
+            left: 2.5rem;
+        }
+
+        .text-features h2 {
+            color: white;
+            font-size: 20px;
+        }
+
+        /* support section start */
+
+        .support-card {
+                        grid-column: 7 / 13;
+            /* grid-row: 1; */
+            background: #3282B8;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            overflow: visible;
+            padding: 2rem;
+            width: 15rem;
+            height: 14.75rem;
+            position: relative;
+            left: 63rem;
+            bottom: 14.5rem;
+        } 
+
+        .text-support h2 {
+            font-size: 20px;
+            color: white;
+        }
+
+        .icon-support-item-book {
+            color: white;
+            position: relative;
+            margin-left: 9rem;
+            bottom: 58px;
+        }
+
+        .icon-support-item-book i {
+            font-size: 52px;
+        }
+
+        .collaboration-card {
+            grid-column: 7 / 13;
+            /* grid-row: 1; */
+            background: #BBE1FA;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            overflow: visible;
+            padding: 2rem;
+            width: 15rem;
+            height: 14.75rem;
+            position: relative;
+            left: 80rem;
+            bottom: 29.1rem;
+        } 
+
+        .text-collaboration h2 {
+            font-size: 20px;
+            color: #0C1016;
+        }
+
+        .icon-collaboration-item-forum {
+            color: #0C1016;
+            position: relative;
+            margin-left: 8.5rem;
+            bottom:80px;
+        }
+
+        .icon-collaboration-item-forum i {
+            font-size: 52px;
         }
