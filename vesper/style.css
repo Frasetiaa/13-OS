@@ -404,8 +404,8 @@
         .main-about {
             text-align: start;
             position: relative;
-            left: 1000px; /* Menggeser 20px ke kiri dari tepi kanan */
-            bottom: 120px;
+            left: 45rem; /* Menggeser 20px ke kiri dari tepi kanan */
+            bottom: 40px;
         }
 
 
@@ -433,10 +433,11 @@
             justify-content: flex-end;
             overflow: visible;
             padding: 2rem;
-            width: 38rem;
+            width: 41rem;
             height: 14.5rem;
             position: relative;
-            left: 350px;
+            top: 20px;
+            left: 5rem;
         }
 
         .icon-features-container {
@@ -503,8 +504,8 @@
             width: 15rem;
             height: 14.75rem;
             position: relative;
-            left: 63rem;
-            bottom: 14.5rem;
+            left: 48rem;
+            bottom: 13.3rem;
         } 
 
         .text-support h2 {
@@ -523,6 +524,8 @@
             font-size: 52px;
         }
 
+        /* collaboration section start */
+
         .collaboration-card {
             grid-column: 7 / 13;
             /* grid-row: 1; */
@@ -535,8 +538,8 @@
             width: 15rem;
             height: 14.75rem;
             position: relative;
-            left: 80rem;
-            bottom: 29.1rem;
+            left: 65.2rem;
+            bottom: 28rem;
         } 
 
         .text-collaboration h2 {
@@ -553,4 +556,21 @@
 
         .icon-collaboration-item-forum i {
             font-size: 52px;
+        }
+        
+        /* text desktop environment start */
+
+        .desktop-information-text h1 {
+            text-align: start;
+            position: relative;
+            margin-left: 58rem;
+            bottom: 20rem;
+        }
+
+
+        .desktop-information-text p {
+            position: relative;
+            margin-left: 6rem;
+            bottom: 25rem;
+            font-size: 24px;
         }
