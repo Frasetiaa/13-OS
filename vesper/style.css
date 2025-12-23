@@ -574,3 +574,29 @@
             bottom: 25rem;
             font-size: 24px;
         }
+
+        /* costume-section start */
+
+        .costume-card {
+            grid-column: 7 / 13;
+            /* grid-row: 1; */
+            background: #BBE1FA;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            overflow: visible;
+            padding: 2rem;
+            width: 13rem;
+            height: 11.75rem;
+            position: relative;
+            left: 65.2rem;
+            bottom: 8rem;
+        }
+
+        h2 {
+            font-size: 18px;
+        }
+
+        .icon-costume-item {
+            font-size: 90rem;
+        }
