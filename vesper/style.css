@@ -739,7 +739,7 @@
 
         /* benefit text start */
 
-        .benefit-section {
+        .benefit-text-section {
             position: relative;
             bottom: 45rem;
             left: 10rem;
@@ -759,4 +759,156 @@
             font-size: 24px;
             position: relative;
             right: 130px;
+        }
+
+
+        /* main benefit start */
+
+        /* card attractive start */
+        .attractive-card {
+            grid-column: 7 / 13;
+            /* grid-row: 1; */
+            background: #BBE1FA;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            overflow: visible;
+            padding: 2rem;
+            width: 15.18rem;
+            height: 20.5rem;
+            position: relative;
+            left: 23rem;
+            bottom: 38rem;
+        }
+
+        .icon-attractive-item {
+            color: black;
+            position: relative;
+            left: 2.5rem;
+            bottom: 5rem;
+        }
+        
+        .icon-attractive-item i {
+            font-size: 104px;
+        }
+
+        .text-attractive h2 {
+            font-size: 20x;
+            position: relative;
+            bottom: 2rem;
+        }
+
+        /* card personalized start */
+
+        .personalized-card {
+            grid-column: 7 / 13;
+            /* grid-row: 1; */
+            background: #0F4C75;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            overflow: visible;
+            padding: 2rem;
+            width: 15.18rem;
+            height: 20.5rem;
+            position: relative;
+            left: 42rem;
+            bottom: 58.5rem;
+        }
+
+        .icon-personalized-item {
+            color: white;
+            position: relative;
+            left: 2.5rem;
+            bottom: 5rem;
+        }
+        
+        .icon-personalized-item i {
+            font-size: 104px;
+        }
+
+        .text-personalized h2 {
+            color: white;
+            white-space: nowrap;
+            font-size: 16px;
+            position: relative;
+            bottom: 2rem;
+            right: 1rem;
+        }
+
+        /* card responsive start */
+
+
+        .responsive-card {
+            grid-column: 7 / 13;
+            /* grid-row: 1; */
+            background: #0F4C75;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            overflow: visible;
+            padding: 2rem;
+            width: 15.18rem;
+            height: 20.5rem;
+            position: relative;
+            left: 61rem;
+            bottom: 78.9rem;
+        }
+
+        .icon-responsive-item {
+            color: white;
+            position: relative;
+            left: 2rem;
+            bottom: 5rem;
+        }
+        
+        .icon-responsive-item i {
+            font-size: 104px;
+        }
+
+        .text-responsive h2 {
+            color: white;
+            white-space: nowrap;
+            font-size: 16px;
+            position: relative;
+            bottom: 2rem;
+            right: 0.5rem;
+        }
+
+        /* card wigdet start */
+
+        .widget-card {
+            grid-column: 7 / 13;
+            /* grid-row: 1; */
+            background: #0F4C75;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            overflow: visible;
+            padding: 2rem;
+            width: 15.18rem;
+            height: 20.5rem;
+            position: relative;
+            left: 80rem;
+            bottom: 99.3rem;
+        }
+
+        .icon-widget-item {
+            color: white;
+            position: relative;
+            left: 2rem;
+            bottom: 5rem;
+        }
+        
+        .icon-widget-item i {
+            font-size: 104px;
+        }
+
+        .text-widget h2 {
+            color: white;
+            white-space: nowrap;
+            font-size: 24px;
+            position: relative;
+            bottom: 2rem;
+            right: rem;
         }
